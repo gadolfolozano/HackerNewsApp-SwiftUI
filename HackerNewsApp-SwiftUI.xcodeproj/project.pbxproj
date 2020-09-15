@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76529BD625104769005B2B35 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76529BD525104769005B2B35 /* MainViewModel.swift */; };
+		76529BDA251047B0005B2B35 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76529BD9251047B0005B2B35 /* NewsModel.swift */; };
 		76648363250B07DE004B3E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76648362250B07DE004B3E1A /* AppDelegate.swift */; };
 		76648365250B07DE004B3E1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76648364250B07DE004B3E1A /* SceneDelegate.swift */; };
 		76648367250B07DE004B3E1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76648366250B07DE004B3E1A /* ContentView.swift */; };
@@ -16,6 +18,7 @@
 		7664837A250B07DF004B3E1A /* HackerNewsApp_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76648379250B07DF004B3E1A /* HackerNewsApp_SwiftUITests.swift */; };
 		76648385250B07DF004B3E1A /* HackerNewsApp_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76648384250B07DF004B3E1A /* HackerNewsApp_SwiftUIUITests.swift */; };
 		76648393250B0828004B3E1A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 76648392250B0828004B3E1A /* .gitignore */; };
+		7689E76825104DD600A76C35 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689E76725104DD600A76C35 /* CustomWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76529BD525104769005B2B35 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		76529BD9251047B0005B2B35 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		7664835F250B07DE004B3E1A /* HackerNewsApp-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackerNewsApp-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76648362250B07DE004B3E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76648364250B07DE004B3E1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		76648384250B07DF004B3E1A /* HackerNewsApp_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsApp_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		76648386250B07DF004B3E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76648392250B0828004B3E1A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7689E76725104DD600A76C35 /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76529BD72510477C005B2B35 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				76529BD9251047B0005B2B35 /* NewsModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		76529BD825104785005B2B35 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				76529BD525104769005B2B35 /* MainViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		76648356250B07DE004B3E1A = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +124,11 @@
 		76648361250B07DE004B3E1A /* HackerNewsApp-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7689E76625104C2F00A76C35 /* view */,
+				76529BD825104785005B2B35 /* viewmodel */,
+				76529BD72510477C005B2B35 /* model */,
 				76648362250B07DE004B3E1A /* AppDelegate.swift */,
 				76648364250B07DE004B3E1A /* SceneDelegate.swift */,
-				76648366250B07DE004B3E1A /* ContentView.swift */,
 				76648368250B07DF004B3E1A /* Assets.xcassets */,
 				7664836D250B07DF004B3E1A /* LaunchScreen.storyboard */,
 				76648370250B07DF004B3E1A /* Info.plist */,
@@ -137,6 +161,15 @@
 				76648386250B07DF004B3E1A /* Info.plist */,
 			);
 			path = "HackerNewsApp-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		7689E76625104C2F00A76C35 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				76648366250B07DE004B3E1A /* ContentView.swift */,
+				7689E76725104DD600A76C35 /* CustomWebView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +306,10 @@
 			files = (
 				76648363250B07DE004B3E1A /* AppDelegate.swift in Sources */,
 				76648365250B07DE004B3E1A /* SceneDelegate.swift in Sources */,
+				7689E76825104DD600A76C35 /* CustomWebView.swift in Sources */,
 				76648367250B07DE004B3E1A /* ContentView.swift in Sources */,
+				76529BD625104769005B2B35 /* MainViewModel.swift in Sources */,
+				76529BDA251047B0005B2B35 /* NewsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
