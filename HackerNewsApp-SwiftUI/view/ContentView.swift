@@ -15,7 +15,10 @@ struct ContentView: View {
         NavigationView {
             List(viewModel.posts) { post in
                 NavigationLink(destination: CustomWebView(url: post.url)) {
-                    Text(post.detail)
+                    HStack {
+                        Text(String(post.points))
+                        Text(post.detail)
+                    }
                 }
             }
             .navigationBarTitle(Text("HackerNewsApp"))

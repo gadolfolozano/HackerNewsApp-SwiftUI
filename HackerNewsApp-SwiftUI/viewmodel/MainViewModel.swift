@@ -19,10 +19,10 @@ class MainViewModel: ObservableObject {
     
     func populateDummyData(){
         posts.append(contentsOf: [
-            NewsModel(id: "0", detail: "olo", url: "something"),
-            NewsModel(id: "1", detail: "que", url: "something"),
-            NewsModel(id: "2", detail: "hace", url: "something"),
-            NewsModel(id: "3", detail: "o no hace", url: "something")
+            NewsModel(id: "0", detail: "olo", url: "something", points: 0),
+            NewsModel(id: "1", detail: "que", url: "something", points: 0),
+            NewsModel(id: "2", detail: "hace", url: "something", points: 0),
+            NewsModel(id: "3", detail: "o no hace", url: "something", points: 0)
         ])
     }
     

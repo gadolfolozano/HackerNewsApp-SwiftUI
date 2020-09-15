@@ -12,4 +12,5 @@ struct NewsModel: Identifiable{
     let id: String
     let detail: String
     let url: String
+    let points: Int
 }

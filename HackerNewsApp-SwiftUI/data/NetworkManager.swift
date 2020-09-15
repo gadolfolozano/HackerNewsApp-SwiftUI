@@ -34,7 +34,7 @@ class NetworkManager {
     
     private func toModel(_ hits: [Hit]) -> [NewsModel] {
         hits.map { hit in
-            NewsModel(id: hit.objectID, detail: hit.title, url: hit.url)
+            NewsModel(id: hit.objectID, detail: hit.title, url: hit.url, points: hit.points)
         }
     }
 }
