@@ -14,14 +14,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(viewModel.posts) { post in
-                NavigationLink(destination: CustomWebView(url: post.detail)) {
+                NavigationLink(destination: CustomWebView(url: post.url)) {
                     Text(post.detail)
                 }
             }
             .navigationBarTitle(Text("HackerNewsApp"))
         }
         .onAppear {
-            self.viewModel.populateDummyData()
+            self.viewModel.fetchPosts()
         }
     }
 }
